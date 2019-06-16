@@ -1,0 +1,29 @@
+Constant
+    - if true: it will return a value
+    - if false: it will be a payable or a non payable transaction
+
+Inputs : (Array)
+    - Determine the input for the given function/constructor
+    - Name: Will use this as hint for the input
+    - type: Tell what the data type of the input
+
+Name - This tells the name of the function
+
+Outputs - If constant is true this field will have a value
+    - (Array)
+    - Name: The result will be in json format. This will determine key
+    - type: Tell what the data type of the output is
+
+Payable
+    - if true: The function needs ETH as a paramter
+    - if false: The function don't need ETH as a paramter, if you pass an ETH it won't be returned to you
+
+StateMutability 
+    - views: Return value
+    - nonpayable: It does changes in the smart contract and it does not need an ETH to process
+    - payable: It does changes in the smart contract and it does need an ETH to process
+
+Type
+    - If function : Show in Generic Contract UI
+    - If constructor : This is needed on Deploy Contract UI
+    - Event: Event listener inside the contract
